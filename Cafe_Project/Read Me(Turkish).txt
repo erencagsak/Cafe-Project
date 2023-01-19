@@ -1,0 +1,17 @@
+- Dosyanın içindeki "Adress" dosyasını C:\ içerisine atınız.
+- "Adress"e tıklayınız. 
+- Data Source=DESKTOP-OH8TO1N > Data Source=. olarak değiştirip kaydediniz.
+* Eğer kaydedilmezse text dosyasını masaüstüne atıp düzenleyip tekrar aynı konuma atınız.
+
+- "Tablo" dosyasının içindekilerini 
+C:\Program Files\Microsoft SQL Server\MSSQL15\MSSQL\DATA içerisine atınız.
+
+- Microsoft SQL Server Management Studioyu açınız.
+Connect dedikten sonra sol üstten "Database" sağ tıklayıp "Attach" tıklayınız.
+Açılan menüden "Add" > "Cafe_Project.mdf" > Ok > Ok
+
+- NONAME Cafe adlı exe dosyasına tıklayınız.
+> Next > Next > Next > Evet > Close
+
+- Masaüstüne gelen kısayoldan uygulamaya erişebilirsiniz.
+

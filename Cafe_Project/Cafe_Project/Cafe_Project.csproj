@@ -1,0 +1,491 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8A67A284-E05A-4E31-B967-D4E12B90539A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cafe_Project</RootNamespace>
+    <AssemblyName>Cafe_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <PublisherName>Cafe</PublisherName>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C87A1AE0BDF5337D810F56582B0FA3B0B145B0BA</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Cafe_Project_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v22.1" />
+    <Reference Include="DevExpress.Data.Desktop.v22.1" />
+    <Reference Include="DevExpress.Data.v22.1" />
+    <Reference Include="DevExpress.Drawing.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.1" />
+    <Reference Include="DevExpress.Sparkline.v22.1.Core" />
+    <Reference Include="DevExpress.XtraBars.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v22.1" />
+    <Reference Include="DevExpress.Printing.v22.1.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaglantiSinif.cs" />
+    <Compile Include="employee_homePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_homePage.Designer.cs">
+      <DependentUpon>employee_homePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_homePage\employee_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_homePage\employee_List.Designer.cs">
+      <DependentUpon>employee_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Sale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Sale.Designer.cs">
+      <DependentUpon>employee_Sale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Table.Designer.cs">
+      <DependentUpon>employee_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table1.Designer.cs">
+      <DependentUpon>employee_Tables_Table1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table10.Designer.cs">
+      <DependentUpon>employee_Tables_Table10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table11.Designer.cs">
+      <DependentUpon>employee_Tables_Table11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table12.Designer.cs">
+      <DependentUpon>employee_Tables_Table12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table2.Designer.cs">
+      <DependentUpon>employee_Tables_Table2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table3.Designer.cs">
+      <DependentUpon>employee_Tables_Table3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table4.Designer.cs">
+      <DependentUpon>employee_Tables_Table4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table5.Designer.cs">
+      <DependentUpon>employee_Tables_Table5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table6.Designer.cs">
+      <DependentUpon>employee_Tables_Table6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table7.Designer.cs">
+      <DependentUpon>employee_Tables_Table7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table8.Designer.cs">
+      <DependentUpon>employee_Tables_Table8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_homePage\employee_Tables\employee_Tables_Table9.Designer.cs">
+      <DependentUpon>employee_Tables_Table9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lgin_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lgin_Page.Designer.cs">
+      <DependentUpon>Lgin_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_homePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_homePage.Designer.cs">
+      <DependentUpon>manager_homePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_homePage\manager_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_homePage\manager_List.Designer.cs">
+      <DependentUpon>manager_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_homePage\manager_List\manager_List_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_homePage\manager_List\manager_List_Add.Designer.cs">
+      <DependentUpon>manager_List_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_homePage\manager_List\manager_List_Change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_homePage\manager_List\manager_List_Change.Designer.cs">
+      <DependentUpon>manager_List_Change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Sale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Sale.Designer.cs">
+      <DependentUpon>manager_Sale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables.Designer.cs">
+      <DependentUpon>manager_Tables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table1.Designer.cs">
+      <DependentUpon>manager_Tables_Table1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table2.Designer.cs">
+      <DependentUpon>manager_Tables_Table2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table10.Designer.cs">
+      <DependentUpon>manager_Tables_Table10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table11.Designer.cs">
+      <DependentUpon>manager_Tables_Table11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table12.Designer.cs">
+      <DependentUpon>manager_Tables_Table12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table3.Designer.cs">
+      <DependentUpon>manager_Tables_Table3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table4.Designer.cs">
+      <DependentUpon>manager_Tables_Table4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table5.Designer.cs">
+      <DependentUpon>manager_Tables_Table5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table6.Designer.cs">
+      <DependentUpon>manager_Tables_Table6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table7.Designer.cs">
+      <DependentUpon>manager_Tables_Table7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table8.Designer.cs">
+      <DependentUpon>manager_Tables_Table8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Tables\manager_Tables_Table9.Designer.cs">
+      <DependentUpon>manager_Tables_Table9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Workers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Workers.Designer.cs">
+      <DependentUpon>manager_Workers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Workers\manager_Workers_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Workers\manager_Workers_Add.Designer.cs">
+      <DependentUpon>manager_Workers_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Workers\manager_Workers_Change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_homePage\manager_Workers\manager_Workers_Change.Designer.cs">
+      <DependentUpon>manager_Workers_Change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="employee_homePage.resx">
+      <DependentUpon>employee_homePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_homePage\employee_List.resx">
+      <DependentUpon>employee_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_homePage\employee_Sale.resx">
+      <DependentUpon>employee_Sale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_homePage\employee_Table.resx">
+      <DependentUpon>employee_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_homePage\employee_Tables\employee_Tables_Table1.resx">
+      <DependentUpon>employee_Tables_Table1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_homePage\employee_Tables\employee_Tables_Table10.resx">
+      <DependentUpon>employee_Tables_Table10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_homePage\employee_Tables\employee_Tables_Table11.resx">
+      <DependentUpon>employee_Tables_Table11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_homePage\employee_Tables\employee_Tables_Table12.resx">
+      <DependentUpon>employee_Tables_Table12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_homePage\employee_Tables\employee_Tables_Table2.resx">
+      <DependentUpon>employee_Tables_Table2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_homePage\employee_Tables\employee_Tables_Table3.resx">
+      <DependentUpon>employee_Tables_Table3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_homePage\employee_Tables\employee_Tables_Table4.resx">
+      <DependentUpon>employee_Tables_Table4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_homePage\employee_Tables\employee_Tables_Table5.resx">
+      <DependentUpon>employee_Tables_Table5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_homePage\employee_Tables\employee_Tables_Table6.resx">
+      <DependentUpon>employee_Tables_Table6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_homePage\employee_Tables\employee_Tables_Table7.resx">
+      <DependentUpon>employee_Tables_Table7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_homePage\employee_Tables\employee_Tables_Table8.resx">
+      <DependentUpon>employee_Tables_Table8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_homePage\employee_Tables\employee_Tables_Table9.resx">
+      <DependentUpon>employee_Tables_Table9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lgin_Page.resx">
+      <DependentUpon>Lgin_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_homePage.resx">
+      <DependentUpon>manager_homePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_homePage\manager_Workers\manager_Workers_Add.resx">
+      <DependentUpon>manager_Workers_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_homePage\manager_List.resx">
+      <DependentUpon>manager_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_homePage\manager_List\manager_List_Add.resx">
+      <DependentUpon>manager_List_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_homePage\manager_List\manager_List_Change.resx">
+      <DependentUpon>manager_List_Change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_homePage\manager_Sale.resx">
+      <DependentUpon>manager_Sale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_homePage\manager_Tables.resx">
+      <DependentUpon>manager_Tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_homePage\manager_Tables\manager_Tables_Table1.resx">
+      <DependentUpon>manager_Tables_Table1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_homePage\manager_Tables\manager_Tables_Table2.resx">
+      <DependentUpon>manager_Tables_Table2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_homePage\manager_Tables\manager_Tables_Table3.resx">
+      <DependentUpon>manager_Tables_Table3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_homePage\manager_Tables\manager_Tables_Table4.resx">
+      <DependentUpon>manager_Tables_Table4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_homePage\manager_Tables\manager_Tables_Table5.resx">
+      <DependentUpon>manager_Tables_Table5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_homePage\manager_Tables\manager_Tables_Table10.resx">
+      <DependentUpon>manager_Tables_Table10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_homePage\manager_Tables\manager_Tables_Table11.resx">
+      <DependentUpon>manager_Tables_Table11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_homePage\manager_Tables\manager_Tables_Table12.resx">
+      <DependentUpon>manager_Tables_Table12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_homePage\manager_Tables\manager_Tables_Table6.resx">
+      <DependentUpon>manager_Tables_Table6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_homePage\manager_Tables\manager_Tables_Table7.resx">
+      <DependentUpon>manager_Tables_Table7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_homePage\manager_Tables\manager_Tables_Table8.resx">
+      <DependentUpon>manager_Tables_Table8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_homePage\manager_Tables\manager_Tables_Table9.resx">
+      <DependentUpon>manager_Tables_Table9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_homePage\manager_Workers.resx">
+      <DependentUpon>manager_Workers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_homePage\manager_Workers\manager_Workers_Change.resx">
+      <DependentUpon>manager_Workers_Change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\managerPages_Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green_icon.png" />
+    <Content Include="Resources\red_icon.png" />
+    <None Include="Resources\red_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SqlLocalDB.15.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2019 Express LocalDB</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
